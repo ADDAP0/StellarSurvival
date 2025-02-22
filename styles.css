@@ -30,6 +30,16 @@ body {
     z-index: 1000;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    height: auto;
+}
+
 .nav-links {
     display: flex;
     justify-content: flex-end;
