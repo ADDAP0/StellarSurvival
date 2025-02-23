@@ -28,6 +28,8 @@ body {
     top: 0;
     backdrop-filter: blur(10px);
     z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -98,6 +100,20 @@ body {
     padding: 2rem;
     border-radius: 10px;
     transition: transform 0.3s ease;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 .card:hover {
