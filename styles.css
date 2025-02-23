@@ -103,6 +103,16 @@ body {
     transition: transform 0.3s ease;
 }
 
+card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
 .card-content {
     padding: 1.5rem;
 }
@@ -120,6 +130,21 @@ body {
 .card:hover {
     transform: translateY(-5px);
 }
+
+.card-img {
+            border-bottom: 3px solid var(--accent-color);
+            height: 250px;
+            object-fit: cover;
+        }
+        
+.mdld-card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
 
 /* 页脚样式 */
 footer {
