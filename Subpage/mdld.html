@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星界Java服务器-服务器展示图</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 增强图片样式 */
+        .card-img {
+            border-bottom: 3px solid var(--accent-color);
+            height: 250px;
+            object-fit: cover;
+        }
 
+        /* 优化卡片悬停效果 */
+        .card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo/logo.png">
+                <span>Stellar Survival</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>服务器展示图</h1>
+            <p>这里展示了服务器往来所有建筑与玩家</p>
+        </section>
+
+        <div class="card-grid">
+            <div class="card">
+                <img src="" alt="加载错误_(´□`」 ∠)_" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">走锐重工</h3>
+                    <p class="card-description">现代都市的璀璨灯光与建筑美学</p>
+                </div>
+            </div>
+
+            <!-- 更多卡片... -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 StellarSurvival | 遵循 MIT 协议</p>
+    </footer>
+</body>
+</html>
