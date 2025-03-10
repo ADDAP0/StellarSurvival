@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh_CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>星界Java服务器</title>
+    <title>Minecraft-星界JAVA-服务器</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo/logo.png">
-                <span>Stellar Survival</span>
-            </div>
-        </div>
+    <header>
+    <h1>Minecraft-星界JAVA-服务器</h1>
+    <nav>
+    <ul>
+        <li><a href="#">最新讯息</a></li>
+        <li><a href="#">意见反馈</a></li>
+        <li><a href="#">入服方式</a></li>
+    </ul>
     </nav>
+    </header>
+    <main>
+    <section class="timer">
+    <h2>服务器已开放时长</h2>
+    <div id="timer">0年 0月 0天 00小时00分钟00秒</div>
+    <script src="timer.js"></script>
+    <a href="index.html">时间错误?刷新一下试试</a>
+    </section>
 
-    <div class="container">
-        <section class="hero">
-            <h1>星界 Java 服务器</h1>
-            <p>生存、创造、生电就是一切！</p>
-        </section>
+    <section class="sentence">
+    <blockquote>海内存知己，天涯若比邻</blockquote>
+    <!--<img src="images/background.png"></!-->
+    </section>
 
-        <div class="card-grid">
-            <div class="card">
-                <a href="Subpage/mdld.html" class="card-link">
-                    <h2>服务器展示图</h2>
-                    <p>服务器各种建筑、红石机器</p>
-                </a>
-            </div>
-            <div class="card">
-                <a href="#">
-                <h2>mod下载</h2>
-                <p>服务器匹配mod下载</p>
-                </a>
-            </div>
-            <div class="card">
-                <h2>特性三</h2>
-                <p>流畅的动画过渡和交互效果</p>
-            </div>
+    <section class="time">
+        <h2>新年倒计时</h2>
+        <div id="countdown">
+            <span id="days">00</span>天
+            <span id="hours">00</span>小时
+            <span id="minutes">00</span>分钟
+            <span id="seconds">00</span>秒
         </div>
-    </div>
+    </section>
+    </main>
+    
+    <script src="countdown.js"></script>
 
     <footer>
         <p>&copy; 2025 StellarSurvival | 遵循 MIT 协议</p>
