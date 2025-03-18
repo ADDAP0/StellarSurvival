@@ -4,7 +4,7 @@
 }
 
 header{
-    background-color: #231c1a;
+    background-color: rgba(35,28,26,0.8);
     height: 80px;
     width: 100%;
     position: fixed;
@@ -56,6 +56,7 @@ header a:hover{
 }
 .timer h2{
   font-size:60px;
+  margin-top: 60px;
 }
 .timer div{
   font-size:18px;
@@ -69,7 +70,7 @@ header a:hover{
     border-radius: 5px;
 }
 .sentence{
-    background-color: #485652;
+    background-color: #231c1a;
     color: white;
     height: 250px;
     display: flex;
@@ -88,32 +89,101 @@ footer{
     font-size: 14px;
     line-height: 1.8em;
 }
-.menu {
-    display: none;
+summary {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
 }
 /* 响应式设计CSS语法 */
 @media screen and (max-width: 768px){
-    header ul{
-        display: none;
-    }
     header h1{
         left: 50%;
         transform: translateX(-50%);
     }
-    .timer{
-        font-size: 30px;
-    }
-    .menu{
+    header li{
         display: block;
-        background-color: transparent;
-        border: none;
-        color: white;
-        font-size: 35px;
-        position: absolute;
-        top: 15px;
-        left: 20px;
-        border: none;
-        cursor: pointer;
+        margin-bottom: 0px;
+        text-align: center;
     }
-
+    .timer{
+        font-size: 15px;
+    }
+    .timer h2{
+        font-size: 45px;
+    }
+    /* 汉堡菜单 */
+    nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 0;
+        background-color: #231c1a;
+        transition: hidden 0.75s ease;
+        overflow: hidden;
+    }
+    details[open] + nav {
+        height: calc(100vh - 80px);
+        overflow: auto;
+    }
+    ul {
+        list-style: none;
+        padding: 0 1rem;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    li {
+        font-size: 1.5rem;
+        border-bottom: 1px solid #231c1a;
+        padding-block: 0.8rem;
+        color: aqua;
+        text-align: center;
+    }
+    li:last-child {
+        border-bottom: none;
+        margin-top: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+    summary {
+        position: relative;
+        cursor: pointer;
+        list-style: none;
+        width: 4rem;
+        height: 2.8rem;
+    }
+    span {
+        display: block;
+        width: 3rem;
+        height: 0.4rem;
+        background-color: #fff;
+        transition: 0.3s;
+        position: absolute;
+        left: 30%;
+        transform: translateX(-30%);
+    }
+    span:first-child {
+        top: 0;
+    }
+    span:nth-child(2) {
+        top: calc(50% - 0.2rem);
+    }
+    span:last-child {
+        bottom: 0;
+    }
+    details[open] summary span:nth-child(2) {
+        display: none;
+    }
+    details[open] span:first-child {
+        top: calc(50% - 0.2rem);
+        transform: rotate(-45deg);
+        transform-origin: center;
+    }
+    details[open] span:last-child {
+        bottom: calc(50% - 0.2rem);
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
 }
